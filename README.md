@@ -12,6 +12,15 @@ My approach revolves around employing clustering techniques to gain insights int
 3. Modelling & Evaluation: Modeling and evaluating data using K-means clustering involves initially determining the best number of clusters through methods like the elbow technique or silhouette scores. Once the optimal cluster count is identified, visualization techniques, like scatter plots, help interpret the resulting clusters, while silhouette scores quantify the quality of clustering, ensuring a robust analysis and pattern recognition.
 4. Model interpretation + Recommendations: Interpreting clusters in a business context involves grasping their unique traits for targeted strategies. By understanding these clusters, tailored recommendations can optimize services or marketing efforts, aligning business actions with the specific needs and behaviors identified within each group.
 
+## 2. Data Pre-processing
+Choose 4 features that will be used for feature clustering and the reasons:
+1. AGE (Age) Reason: Customer age can influence travel preferences and flight habits. Different age groups may have different preferences regarding destinations, travel times and comfort levels.
+2. SUM_YR_1 (First Year Fare Revenue) Reason: This reflects the revenue earned by customers from airline tickets in the first year of their membership in the Frequent Flyer program. This data can help identify customer behavior at the start of their membership in the program, which may differ from the behavior of customers who have joined for a long time.
+3. SUM_YR_2 (Second Year Fare Revenue) Reason: This reflects the revenue earned by customers from airline tickets in the second year of their membership in the Frequent Flyer program. Can be helpful in seeing how customer behavior has changed over time in the Frequent Flyer program. If there is an increase or decrease in revenue, it may indicate a change in customer preferences or activity.
+4. SEG_KM_SUM (Total Flight Distance) Reason: The total flight distance made by the customer can be an indicator of flight activity. Customers who frequently fly long distances may have a different profile than customers who fly short distances.
+
+And I do data preprocessing such as deleting null data, deleting duplicate data, deleting outliers, and doing standardization.
+
 ## 3. Modeling & Evaluation
 
 1. Elbow Method
